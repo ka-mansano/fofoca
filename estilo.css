@@ -60,10 +60,6 @@ header nav a:hover{
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-
-
-
-
 footer{
     display: flex;
     justify-content: center;
@@ -79,7 +75,77 @@ footer img{
     width: 50px;
     height: auto;
 }
-footer span{
+
+.propaganda {
+    width: 220px;
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+  
+.propaganda img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.propaganda p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.propaganda::after {
+    content: '';
+    display: block;
+    height: 100%; 
     position: absolute;
-    left: 42%;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+}
+
+.propaganda:hover::after {
+    opacity: 1; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card strong{
+    font-size: var(--font-size-md);
+    margin: 10px;
+}
+
+.card button{
+    border: 0;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: var(--font-size-small);
+    color: #fff;
+    background-color: var(--bg-button);
+    cursor: pointer;
+}
+
+.card  button:hover{
+    background-color: #4cd62a;
+    transition: 0.4s;
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex; /* Transforma o container em um flex container */
+}
+  
+  /* Estilo para o conteúdo da página */
+.content {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante do container */
+    /* Estilo do conteúdo da página */
 }
