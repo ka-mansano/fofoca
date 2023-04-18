@@ -1,15 +1,20 @@
-/*PALETA DE CORES: #111113 #674d69 #B7C9A9 #f6ebdd #FF7C70 
-#b1e6d1  #77b1a9  #3d7b80  #270a33  #451a3e
+/*PALETA DE CORES: #111113
+#b1e6d1  #77b1a9  #3d7b80
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html{
     font-family: 'Dongle', sans-serif;
-    background-color: #f6ebdd;
+    background-color: #e0e0d7;
 }
 
 header div{
     background-color: #000000 ;
-    box-shadow: 0px 2px 200px #4b3c5d;
+    box-shadow: 0px 2px 30px #270021;
     z-index: 1;
     position: relative;
     display: flex;
@@ -18,11 +23,39 @@ header div{
     font-size: 16px;
     align-items: center;
 }
+
 header div p{
     font-size: 40px;
     color: #cf9bcc;
+    
 }
+
 header img{
     width: 150px;
     margin-right: 30px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #700474;
+    height: 48px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: bold;
+    color: #75006f;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: #75006f;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
