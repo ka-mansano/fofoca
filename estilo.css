@@ -59,3 +59,26 @@ header nav a:hover{
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    color: #75006f;
+    font-size: 20px;
+}
+
+footer img{
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 50px;
+    height: auto;
+}
+footer span{
+    position: absolute;
+    left: 42%;
+}
